@@ -1,0 +1,755 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 50px;
+}
+body{
+	font-size: .16rem;
+	width: 100%;
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}
+.china img{
+	width: 100%;
+}
+.lixia p{
+	font-size: 0.36rem;
+	text-align: center;
+	line-height: 0.8rem;
+	position: relative;
+}
+.lixia p img{
+	width: 2rem;
+	position: absolute;
+	right: 0;
+}
+.lixia p a{
+	position: absolute;
+	top: 0;
+	left: 0.2rem;
+}
+.sent{
+	padding: 8px 0;
+}
+.sent img{
+	width: 100%;
+}
+.content1{
+	position: relative;
+	margin: 0.5rem 0.44rem 0;
+}
+.content1 img{
+	width: 100%;
+}
+.content1 img:last-child{
+	width: 0.52rem;
+	position: absolute;
+	right: -0.18rem;
+	top: -0.18rem;
+}
+.content2{
+	padding: 0.49rem 0.98rem;	
+}
+.content2 img{
+	width: 100%;
+}
+.content3{
+	margin: 0 0.44rem 0.42rem;
+}
+.content3 img{
+	width: 100%;
+}
+.myself{
+	padding: 0.2rem 1.67rem 0.78rem ;
+}
+.myself p{
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.36rem;
+}
+
+
+/*  */
+.gift{
+	margin: 0.48rem 0.3rem 0.35rem 0.5rem;
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.28rem;
+	color: rgb(101,101,101);
+}
+.gift p:last-child{
+	font-size: 0.24rem;
+}
+.gift p img,.box img{
+	width: 0.34rem;
+	margin-right: 0.2rem;	
+	vertical-align: middle;
+}
+.gift-pho,
+.flash{
+	text-align: center;
+}
+.gift-pho img{
+	width: 2.26rem;
+}
+.flash{
+	padding: 0.46rem 0 0.5rem;
+}
+.flash img{
+	width: 0.66rem;
+}
+.box{
+	font-size: 0.28rem;
+	margin: 0 0.3rem 0.32rem 0.5rem;
+	color: rgb(101,101,101);
+}
+.count{
+	margin: 0 0.5rem 0.42rem;
+	color: rgb(135,135,135);
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.24rem;
+}
+.count p img{
+	width: 0.24rem;
+}
+.pinzhi{
+	padding: 0 0.5rem;
+}
+.pinzhi-top{
+	display: flex;
+	justify-content: space-between;
+	/* align-content: space-between; */
+	/* height: 12rem; */
+}
+.pinzhi-top .pinzhi1{
+	width: 3rem;
+	height: 2.64rem;
+	border: 1px solid rgb(224,224,224);
+	box-shadow: 0 0 0.2rem rgb(224,224,224);
+	border-radius: 0.1rem;
+	margin-bottom: 0.32rem;
+}
+.pinzhi1-top{
+	position: relative;
+	height: 1.44rem;
+	padding: 0.32rem 0 0 0.3rem;
+	border-bottom: 1px solid rgb(224,224,224);
+}
+.pinzhi1-top img{
+	width: 0.58rem;
+	position: absolute;
+	right: 0.3rem;
+	top: 0.32rem;
+}
+.pinzhi1-top .jibie{
+	font-size: 0.3rem;
+	color: rgb(188,188,188);
+	font-weight: 400;
+}
+.pinzhi1-top p:nth-child(2){
+	font-size: 0.24rem;
+	color: rbg(101,101,101);
+}
+.pinzhi1-top p:nth-child(2) span{
+	font-size: 0.48rem;
+	font-weight: 500;
+}
+.pinzhi1-top p:nth-child(3){
+	font-size: 0.24rem;
+	color: rgb(153,153,153);
+}
+.pinzhi1-bottom{
+	text-align: center;
+	padding: 0.28rem 0 0;
+}
+.pinzhi1-bottom img{
+	width: 0.32rem;
+}
+.pinzhi1-top .p2{
+	color: rgb(201,179,113);
+}
+.pinzhi1-top .p3{
+	color: rgb(198,206,230);
+}
+.pinzhi1-top .p4{
+	color: rgb(255,222,39);
+}
+.pinzhi1-top .p5{
+	color: rgb(76,223,241);
+}
+.pinzhi1-top .p6{
+	color: rgb(92,76,241);
+}
+.pinzhi1-top .p7{
+	color: rgb(196,76,241);
+}
+.pinzhi1-top .p8{
+	color: rgb(241,76,227);
+}
+.pinzhi-footer{
+	padding: 0.3rem 0.75rem 0.32rem;
+	text-align: center;
+	font-size: 0.22rem;
+	color: rgb(135,135,135);
+}
+.price{
+	border-top: 1px solid rgb(224,224,224);
+	padding: 0.3rem 0.64rem;
+	display: flex;
+	justify-content: space-between;
+}
+.price-left p:first-child{
+	font-size: 0.22rem;
+	color: rgb(135,135,135);
+}
+.price-left p:last-child{
+	font-size: 0.42rem;
+	color: rgb(51,51,51);
+}
+.price-right{
+	width: 1.5rem;
+	height: 0.7rem;
+	background-color: rgb(105,190,73);
+	border-radius: 0.1rem;
+	text-align: center;
+	border: none;
+	color: white;
+}
+#body{
+	position: relative;
+}
+.yincang{
+	width: 5.6rem;
+	padding: 0 0.35rm 0.38rem;
+	position: absolute;
+	border-radius: 0.1rem;
+	opacity: 0;
+	top: 3.1rem;
+	left: 0.95rem;
+	background: rgb(250,250,250);
+	text-align: center;
+	transition: 1s;
+}
+.yincang-top{
+	height: 5rem;
+	padding-top: 0.58rem;
+}
+.kongbai{
+	width: 4.9rem;
+	height: 3.3rem;
+	background: rgb(235,235,235);
+	margin: 0.3rem 0.35rem;
+}
+.yincang-top p:first-child{
+	font-size: 0.42rem;
+	color: #000000;
+}
+.yincang-top p:last-child{
+	font-size: 0.22rem;
+	color: rgb(153,153,153);
+}
+.price-right .yincang-bottom{
+	border-top: 1px solid #DDDDDD;
+	text-align: center;
+}
+.yincang-bottom a{
+	display: block;
+	color: rgb(0,194,0);
+	font-size: 0.42rem;
+	padding: 0.34rem 0;
+}
+.price-right:focus .yincang{
+	opacity: 1;
+}
+
+
+
+
+/*  */
+.sent-concent{
+	padding: 0.62rem 0.3rem 0;
+}
+.sent-pho{
+	text-align: center;
+}
+.sent-pho img{
+	width: 2.49rem;
+}
+.sent-pho p{
+	padding: 0.3rem 0 0.36rem;
+	font-size: 0.3rem;
+	font-weight: 500;
+}
+.sent-cen{
+	border: 1px solid rgb(224,224,224);
+	border-radius: 0.1rem;
+	padding: 0.4rem;
+}
+.sent-cen p{
+	font-size: 0.28rem;
+	color: rgb(101,101,101);
+	display: flex;
+	justify-content: space-between;
+}
+.sent-cen p:nth-child(2){
+	margin: 0.4rem 0;
+}
+.zengyan p{
+	margin-top: 0.27rem;
+	font-size: 0.24rem;
+	color: rgb(87,107,149);
+}
+.zengyan-box{
+	height: 2.1rem;
+	margin: 0.16rem 0;
+	background: rgb(248,248,248);
+	border-radius: 0.1rem;
+	padding: 0.3rem;
+}
+.zengyan-box p{
+	font-size: 0.3rem;
+	color: rgb(101,101,101);
+}
+.sent-button{
+	margin: 0.59rem 0;
+	width: 100%;
+	height: 0.86rem;
+	background: rgb(157,228,156);
+	color: rgb(219,244,219);
+	font-size: 0.36rem;
+	border: 1px solid rgb(154,212,153);
+}
+
+
+
+/*  */
+.ok-pho{
+	padding: 1.1rem 0 0.6rem;
+	text-align: center;
+	font-size: 0.4rem;
+}
+.ok-pho img{
+	width: 2rem;
+}
+.ok-mes{
+	font-size: 0.26rem;
+	color: rgb(200,200,200);
+	text-align: center;
+	padding: 2rem 0 3rem;
+}
+.ok-mes p{
+	padding: 0 0.8rem 0.25rem;
+}
+.ok-ok{
+	background: rgb(9,187,7);
+	color: white;
+	font-size: 0.36rem;
+	width: 6.9rem;
+	height: 0.86rem;
+	border: 1px solid rgb(2,148,0);
+	border-radius: 0.1rem;
+}
+.ok-my{
+	padding: 0.5rem 2.5rem;
+}
+.ok-my p{
+	font-size: 0.26rem;
+	display: flex;
+	justify-content: space-between;
+}
+.ok-my p a{
+	color: rgb(87,107,149);
+}
+.ok-my p span{
+	color: #000000;
+}
+
+
+
+/*  */
+.my-content{
+	margin: 0 0.46rem;
+}
+.my-sent{
+	margin-top: 0.42rem;
+	border: 1px solid rgb(224,224,224);
+	border-radius: 0.1rem;
+	text-align: center;
+	padding: 0.4rem 1.06rem 0.47rem;
+	margin-bottom: 0.33rem;
+	box-shadow: 0 0 0.2rem rgb(224,224,224);
+}
+.my-sent img{
+	width: 0.66rem;
+}
+.my-sent .all{
+	font-size: 0.3rem;
+	margin: 0.25rem 0;
+}
+.my-sent p:nth-child(3){
+	font-size: 0.6rem;
+}
+.my-center{
+	display: flex;
+	justify-content: space-between;
+}
+.my-center .ge{
+	font-size: 0.36rem;
+	color: rgb(101,101,101);
+	line-height: 0.7rem;
+}
+.my-center .yuan{
+	font-size: 0.24rem;
+	color: rgb(101,101,101);
+	line-height: 0.6rem;
+}
+.my-nvshen{
+	border: 1px solid rgb(224,224,224);
+	border-radius: 0.1rem;
+	padding: 0.3rem 0.32rem 0;
+	margin-top: 0.2rem;
+}
+.my-nvshen .nvshen-f,.my-nvshen .nvshen-t{
+	display: flex;
+	justify-content: space-between;
+}
+.my-nvshen .nvshen-t{
+	line-height: 0.6rem;
+}
+.my-nvshen .nvshen-f{
+	margin: 0.2rem 0 0.3rem;
+	line-height: 0.8rem;
+}
+.my-nvshen .nv1{
+	font-size: 0.3rem;
+	font-weight: 600;
+}
+.my-nvshen .nv2{
+	font-size: 0.24rem;
+	color: rgb(240,190,17);
+}
+.my-nvshen .nv3{
+	font-size: 0.42rem;
+	font-weight: 600;
+}
+.my-nvshen .nv4{
+	font-size: 0.24rem;
+	color: rgb(154,154,154);
+}
+.my-nvshen .nv2 span,.my-nvshen .nv4 span{
+	color: rgb(51,51,51);
+}
+.my-nvshen .nv4 span{
+	font-weight: 600;
+}
+.my-nvshen .nv5{
+	color: rgb(142,204,122);
+}
+.my-f{
+	text-align: center;
+	padding: 0.6rem 0 0.4rem;
+}
+.my-f a{
+	font-size: 0.26rem;
+	color: rgb(87,107,149);
+}
+
+
+
+
+
+
+/*  */
+.sent-pho .zhufu1{
+	padding: 0.3rem 0 0;
+}
+.sent-pho .zhufu2{
+	font-size: 0.36rem;
+	margin-bottom: 0.4rem;
+}
+.sent-cen p:nth-child(3) {
+    margin: 0.4rem 0;
+}
+.sent-cen p .date{
+	color: rgb(136,136,136);
+}
+.sent-lucky{
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.22rem;
+	color: rgb(135,135,135);
+	padding: 0.25rem 0;
+}
+.sent-lucky span{
+	color: rgb(249,207,108);
+}
+.lingqu-t{
+	line-height: 0.48rem;
+	background: rgb(248,248,248);
+	padding: 0 0.3rem;
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.24rem;
+	color: rgb(101,101,101);
+}
+.lingqu-t p:last-child{
+	color: rgb(135,135,135);
+}
+.lingqu-t p:last-child a{
+	color: rgb(9,187,7);
+	text-decoration: underline;
+}
+.lingqu-f{
+	padding: 0.5rem 0.3rem 0.58rem;
+	font-size: 0.26rem;
+}
+.people{
+	display: flex;
+	justify-content: space-between;
+	color: rgb(101,101,101);
+	margin-bottom: 0.4rem;
+}
+.people:last-child{
+	margin-bottom: 0;
+}
+.people1{
+	width: 1.77rem;
+	display: flex;
+	justify-content: space-between;
+}
+.people1 .people1-box{
+	width: 0.44rem;
+	height: 0.44rem;
+	background: rgb(209,209,209);
+	position: relative;
+	border-radius: 0.1rem;
+}
+.people1 .people1-box img{
+	width: 0.3rem;
+	position: absolute;
+	right: -0.08rem;
+	top: -0.08rem;
+}
+
+
+
+
+
+/*  */
+.sent-pho .zhufu3{
+	color: rgb(193,193,193);
+}
+.sent-cen p.jiazhi{
+	margin:  0.4rem 0 0;
+}
+
+
+/*  */
+.my-sent .shou{
+	font-size: 0.3rem;
+	color: rgb(51,51,51);
+	line-height: 0.8rem;
+}
+.my-sent .shou span{
+	color: rgb(105,190,73);
+}
+.my-nvshen .nv6{
+	color: rgb(240,190,17);
+	line-height: 0.3rem;
+	text-align: right;
+}
+.my-nvshen .nv7{
+	font-size: 0.24rem;
+	font-weight: normal;
+	color: rgb(51,51,51);
+}
+.my-nvshen .nv7 img{
+	width: 0.66rem;
+	vertical-align: middle;
+}
+
+
+
+
+
+/*  */
+.sent-cen p:first-child span img{
+	width: 0.38rem;
+	vertical-align: middle;
+	margin-right: 0.2rem;
+}
+.people4{
+	color: rgb(51,51,51);
+	font-weight: bold;
+}
+
+
+
+
+/*  */
+.sent-cen p.box-gift{
+	margin: 0.4rem 0 0;
+}
+.sent-button1{
+	width: 100%;
+	height: 0.86rem;
+	background: rgb(9,187,7);
+	border: 1px solid rgb(2,148,0);
+	color: white;
+	border-radius: 0.1rem;
+	margin-top: 2.2rem;
+	margin-bottom: 0.82rem;
+}
+
+
+
+
+
+
+/*  */
+.mygift{
+	padding: 0.4rem 0;
+	text-align: center;
+	font-size: 0.3rem;
+}
+.mygift img{
+	width: 5.6rem;
+	margin-bottom: 0.28rem;
+}
+.myaddress{
+	color: rgb(101,101,101);
+}
+.xinxi{
+	display: flex;
+	justify-content: space-between;
+	background: rgb(248,248,248);
+	line-height: 0.48rem;
+	padding: 0 0.6rem;
+}
+.xinxi p:nth-child(1){
+	font-size: 0.24rem;
+}
+.xinxi p:nth-child(2){
+	font-size: 0.22rem;
+	color: rgb(168,168,168);
+}
+input{
+	border: none;
+	font-size: 0.28rem;
+	width: 4.5rem;
+	color: rgb(101,101,101);
+	line-height: 0.9rem;
+}
+.input{
+	width: 4.4rem;
+}
+.tel{
+	font-size: 0.28rem;
+	line-height: 0.9rem;
+	padding: 0 0.6rem;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid rgb(224,224,224);
+}
+.tel i{
+	font-size: 0.28rem;
+}
+.queren{
+	margin: 0.9rem 0.3rem 0;
+	text-align: center;
+	font-size: 0.22rem;
+	color: rgb(135,135,135);
+}
+.sent-button2{
+	margin-top: 0.25rem;
+}
+.yincang1{
+	width: 4.8rem;
+	position: absolute;
+	top: 3.67rem;
+	left: 1.35rem;
+	background: rgb(250,250,250);
+	border-radius: 0.1rem;
+	opacity: 0;
+	transition: .5s;
+}
+.yincang1-t{
+	padding: 0.44rem 0 1.18rem;
+	border-bottom: 1px solid rgb(224,224,224);
+}
+.yincang1-t h3{
+	font-size: 0.36rem;
+	color: rgb(51,51,51);
+}
+.yincang1-t p{
+	font-size: 0.28rem;
+	color: rgb(101,101,101);
+}
+.lianxi{
+	margin: 0 0.5rem;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 0.36rem;
+}
+.lianxi1{
+	padding-top: 0.8rem;
+}
+.lianxi p{
+	text-align: left;
+}
+.lianxi p:first-child{
+	width: 1.35rem;
+}
+.lianxi p:last-child{
+	width: 2.5rem;
+}
+.yincang1-f{
+	display: flex;
+	justify-content: space-between;
+}
+.yincang1-f a{
+	display: block;
+	width: 2.4rem;
+	padding: 0.3rem 0;
+	font-size: 0.3rem;
+}
+.reset{
+	color: rgb(135,135,135);
+}
+.admin{
+	color: rgb(9,187,7);
+}
+.sent-button2:focus .yincang1{
+	opacity: 1;
+}
+
+
+
+
+
+
+/*  */
+.tel1{
+	border-bottom: 0;
+	line-height: 1rem;
+}
+.tel1 p:first-child{
+	width: 2.2rem;
+}
+.tel2 p:last-child{
+	line-height: 0.5rem;
+}
+.myaddress1{
+	margin-top: 0.46rem;
+}
+.myok{
+	margin: 0.25rem 0.3rem 0;
+}
+.myok button{
+	margin-bottom: 0;
+}
