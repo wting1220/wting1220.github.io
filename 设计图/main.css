@@ -202,6 +202,7 @@ a{
 	padding: 0.3rem 0.64rem;
 	display: flex;
 	justify-content: space-between;
+	position: relative;
 }
 .price-left p:first-child{
 	font-size: 0.22rem;
@@ -219,22 +220,25 @@ a{
 	text-align: center;
 	border: none;
 	color: white;
-	position: relative;
 }
-button{
-	
+.yin{
+	position: absolute;
+	width: 100%;
+    height: 14rem;
+    background-color: rgba(0, 0, 0, 0.5);
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	transition: 1s;
 }
 .yincang{
 	width: 5.6rem;
+	margin: 0 auto;
+	margin-top: 3rem;
 	padding: 0 0.35rem 0.38rem;
-	position: absolute;
 	border-radius: 0.1rem;
-	opacity: 0;
-	top: -10rem;
-	left: -4.5rem;
-	background: rgb(250,250,250);
+	background: white;
 	text-align: center;
-	transition: 1s;
 	border: none;
 }
 .yincang-top{
@@ -265,7 +269,7 @@ button{
 	font-size: 0.42rem;
 	padding: 0.34rem 0;
 }
-.price-right:focus .yincang{
+.price-right:focus .yin{
 	opacity: 1;
 }
 
@@ -673,11 +677,12 @@ input{
 .yincang1{
 	width: 4.8rem;
 	position: absolute;
-	top: 3.67rem;
-	left: 1.35rem;
-	background: rgb(250,250,250);
+	top: 0rem;
+	left: 0rem;
+	margin-top: 3rem;
+	margin-left: 1.4rem;
+	background: white;
 	border-radius: 0.1rem;
-	opacity: 0;
 	transition: .5s;
 }
 .yincang1-t{
@@ -726,7 +731,7 @@ input{
 .admin{
 	color: rgb(9,187,7);
 }
-.sent-button2:focus .yincang1{
+.sent-button2:focus .yin{
 	opacity: 1;
 }
 
@@ -755,3 +760,30 @@ input{
 .myok button{
 	margin-bottom: 0;
 }
+
+
+
+
+
+/*  */
+#body img{
+	width: 7.5rem;
+}
+#body p{
+	text-align: center;
+	color: rgb(51,51,51);
+}
+.lixia{
+	font-weight: 600;
+	font-size: 0.36rem;
+	line-height: 0.5rem;
+}
+.heart{
+	font-size: 0.24rem;
+	line-height: 0.5rem;
+}
+/* #body p:last-child{
+	text-align: center;
+	
+	color: rgb(51,51,51);
+} */
