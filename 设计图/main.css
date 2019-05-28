@@ -228,8 +228,7 @@ a{
     background-color: rgba(0, 0, 0, 0.5);
 	bottom: 0;
 	right: 0;
-	opacity: 0;
-	transition: 1s;
+	display: none;
 }
 .yin1{
 	position: absolute;
@@ -238,8 +237,7 @@ a{
     background-color: rgba(0, 0, 0, 0.5);
 	bottom: 0;
 	right: 0;
-	opacity: 0;
-	transition: 1s;
+	display: none;
 }
 .yincang{
 	width: 5.6rem;
@@ -280,7 +278,7 @@ a{
 	padding: 0.34rem 0;
 }
 .price-right:focus .yin{
-	opacity: 1;
+	display: block;
 }
 
 
@@ -742,7 +740,7 @@ input{
 	color: rgb(9,187,7);
 }
 .sent-button8:focus .yin1{
-	opacity: 1;
+	display: block;
 }
 
 
