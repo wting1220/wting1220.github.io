@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML系列教程</title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+				/* font-size: 14px; */
+			}
+			h2, h3, h4, h5, h6, em {
+				font-weight: bold;
+			}
+			#link_about,#link_help{
+				color: #3388FF;
+			}
+			.center .right li:hover{
+				text-decoration : none;
+				background-color: darkred;
+			}
+			.center .right a:hover{
+				text-decoration : none;
+				color: white;
+			}
+			.center .left li:hover{
+				text-decoration : none;
+				background-color: #777777;
+			}
+			.center .left a:hover{
+				text-decoration : none;
+				color: white;
+			}
+			.top li:hover{
+				text-decoration : none;
+				background-color: black;
+			}
+			.top a:hover{
+				text-decoration : none;
+				color: white;
+			}
+			.center .middle a:hover{
+				color: red;
+				border-bottom: 1px solid red;
+			}
+			.center .middle .middle8 a:hover{
+				border-bottom: 1px solid red;
+			}
+			.center .middle .middle9 a:hover{
+				border-bottom: 1px solid red;
+			}
+			.center .right a:hover{
+				text-decoration : none;
+				color: white;
+			}
+			.center .left li:hover{
+				text-decoration : none;
+				background-color: #777777;
+				color: #EEEEEE;
+			}
+			.footer a:hover{
+				color: #000000;
+				text-decoration: underline;
+			}
+			a{
+				text-decoration: none;
+				color: #000000;
+			}
+			li{
+				list-style: none;
+			}
+			.box{
+				width: 1239px;
+				border: 1px solid #000000;
+				margin: 0 auto;
+				padding:0 0 0 12px ;
+			}
+			.header{
+				width: 1210px;
+				height: 100px;	
+				background: #fdfcf8;
+				overflow: hidden;
+			}
+			.header .header-index{
+				width: 500px;
+				height: 100px;
+				background: url(bg.png) 0 -150px no-repeat;
+			}
+			.header .header-index h1{
+				text-indent: -9999px;
+				height: 100%;
+			}
+			.header .header-input{
+				width: 306px;
+				margin-top: 35px;
+			}
+			.header .header-input input#input{
+				width: 256px;
+				height: 28px;
+				background-color: white;
+				font: 12px Verdana, Arial, Helvetica, sans-serif;
+				border: 1px solid #ddd;	
+			}
+			.header .header-input input.button{
+				width: 30px;
+				height: 30px;
+				color: #FFFFFF;
+				background-color: #AE4141;
+				font: 12px Verdana, Arial, Helvetica, sans-serif;
+				border: 0;
+			}
+			.top{
+				width: 1210px;
+				background-color: #CCCCCC;
+				overflow: hidden;
+			}
+			.top ul li{
+				float: left;
+				padding: 0 40px;
+				line-height: 48px;
+				text-align: center;
+			}
+			
+			
+			.center{
+				width: 1210px;
+				overflow: hidden;
+			}
+			.left{
+				float: left;
+			}
+			.right{
+				float: right;
+			}
+			.clear{
+				clear: both;
+			}
+			.center .left {
+				width: 180px;
+				border: 1px solid #CCCCCC;
+				padding: 10px 0 15px 10px;
+				font-family: "微软雅黑";
+				float: left;
+			}
+			.center .middle{
+				width: 816px;
+				border: 0;
+				overflow: hidden;
+				/* font-size: 14px; */
+			}
+			.center .right{
+				width: 180px;
+				border: 1px solid #CCCCCC;
+				padding: 10px 0 83px 10px;
+				font-family: "微软雅黑";
+			}
+			.center .left,.right h2{
+				font-size: 14px;
+			}
+			.center .left,.right a{
+				font-size: 12px;
+			}
+			.center .left ul li{
+				padding: 0.5em 5px;
+			}
+			.center .right ul li{
+				padding: 0.262em 10px;
+			}
+
+			
+			.center .middle .middle-top{
+				margin: 25px 0 0 0;
+			}
+			.center .middle .middle-top p{
+				margin: 12px 0 0 0;
+			}
+			.center .middle p{
+				font-size: 16px;
+			}
+			.center .middle h3{
+				font-size: 20px;
+			}
+			strong{
+				font-size: 18px;
+				font-weight:800;
+			}
+			.center .middle .middle1{
+				text-align: center;
+				border-bottom: 1px solid #aaa;
+				padding:30px 0; 
+				margin: 0 25px 0 0;
+				min-height: 118px;
+				line-height: 32px;
+			}
+			.center .middle .middle2{
+				text-align: left;
+				background: url(icon2.png) 0 0 no-repeat;
+				border-bottom: 1px solid #aaa;
+				padding:0 0 30px 100px; 
+				margin: 35px 25px 0 0;
+				line-height: 24px; 
+				min-height：118px;
+			}
+			.center .middle .middle3{
+				text-align: left;
+				background: url(icon3.png) 0 0 no-repeat;
+				border-bottom: 1px solid #aaa;
+				padding:0 0 30px 100px; 
+				margin: 35px 25px 0 0;
+				line-height: 24px; 
+				min-height：118px;
+			}
+			.center .middle .middle4{
+				text-align: left;
+				background: url(icon4.png) 0 0 no-repeat;
+				border-bottom: 1px solid #aaa;
+				padding:0 0 30px 100px; 
+				margin: 35px 25px 0 0;
+				line-height: 24px; 
+				min-height：118px;
+			}
+			.center .middle .middle5{
+				text-align: left;
+				background: url(icon5.png) 0 0 no-repeat;
+				border-bottom: 1px solid #aaa;
+				padding:0 0 30px 100px; 
+				margin: 35px 25px 0 0;
+				line-height: 24px; 
+				min-height：118px;
+			}
+			.center .middle .middle6{
+				text-align: left;
+				background: url(icon6.png) 0 0 no-repeat;
+				border-bottom: 1px solid #aaa;
+				padding:0 0 30px 100px; 
+				margin: 35px 25px 35px 0;
+				line-height: 24px; 
+				min-height：118px;
+			}
+			.center .middle .middle7{
+				text-align: left;
+				background: url(icon7.png) 0 0 no-repeat;
+				border-bottom: 1px solid #aaa;
+				padding:0 0 30px 100px; 
+				margin: 35px 25px 30px 0;
+				line-height: 24px; 
+				min-height：118px;
+			}
+			.center .middle .middle8{
+				text-align: left;
+				background: url(icon8.png) 0 0 no-repeat;
+				padding: 10px 0 60px 100px; 
+				margin: 35px 25px 0 0;
+				line-height: 24px; 
+				min-height：118px;
+			}
+			.center .middle .middle9{
+				text-align: left;
+				background: url(icon9.png) 0 0 no-repeat;
+				padding:15px 0 30px 50px; 
+				margin: 15px 0 0 75px; 
+				line-height: 24px; 
+				width: 290px;
+				float: left;
+			}
+			.center .middle .middle10{
+				text-align: left;
+				background: url(icon10.png) top left no-repeat;
+				padding:15px 0 30px 50px; 
+				margin: 15px 25px 0 75px;
+				line-height: 24px; 
+				width: 250px;
+				float: left;
+			}
+			.center .middle  a{
+				font-size: 16px;
+				color: brown;
+				margin: 0px 6px;
+				border-bottom:1px solid brown;
+			}
+			.center .middle .middle8 a{
+				font-size: 16px;
+				color: black;
+			}
+			.center .middle .middle9 h3{
+				font-size: 16px;
+				color: #777777;
+			}
+			.center .middle .middle10 h3{
+				font-size: 16px;
+				color: #777777;
+			}
+			.center .middle .middle8 a{
+				border-bottom:1px solid black;
+			}
+			.center .middle .middle9 a{
+				font-size: 14px;
+				color: black;
+				margin: 0 6px;
+				border-bottom:1px solid black;
+			}
+			
+			.footer{
+				padding-top: 16px;
+				width: 1210px;
+				line-height: 24px;
+				text-align: center;
+				color: #777777;
+				background: url(footer.png) left top repeat-x rgb(253, 252, 248);
+			}
+			.footer a{
+				color: #777777;
+			}
+			.footer a#a1{
+				color: #000000;
+			}
+			.footer #p1{
+				font-size: 12px;
+				background: transparent url(alert.png) no-repeat;
+				background-position: 235px 2px;
+			}
+			.footer #p2 {
+				margin: 30px 0 30px 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<!-- header -->
+			<div class="header">
+				<div class="header-index">
+					<h1><a href="/index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a></h1>
+				</div>
+				<div class="header-input right">
+					<input type="text" name="" id="input" value="" />
+					<input type="button" value="Go" class="button" />
+				</div>
+			</div>
+			
+			<!-- top -->
+			<div class="top">
+				<ul>
+					<li><a href="">HTML/CSS</a></li>
+					<li><a href="">JavaScript</a></li>
+					<li><a href="">Server Side</a></li>
+					<li><a href="">ASP.NET</a></li>
+					<li><a href="">XML</a></li>
+					<li><a href="">Web Services</a></li>
+					<li><a href="">Web Building</a></li>
+				</ul>
+			</div>
+			
+			<!-- center -->
+			<div class="center clear">
+				<div class="left">
+					<h2>HTML教程</h2>
+					<ul>
+						<li><a href="">HTML</a></li>
+						<li><a href="">HTML5</a></li>
+						<li><a href="">XHTML</a></li>
+						<li><a href="">CSS</a></li>
+						<li><a href="">CSS3</a></li>
+						<li><a href="">TCP/IP</a></li>
+					</ul>
+					<h2>浏览器脚本</h2>
+					<ul>
+						<li><a href="">JavaScript</a></li>
+						<li><a href="">HTML DOM</a></li>
+						<li><a href="">jQuery</a></li>
+						<li><a href="">jQuery Mobile</a></li>
+						<li><a href="">AJAX</a></li>
+						<li><a href="">JSON</a></li>
+						<li><a href="">DHTML</a></li>
+						<li><a href="">E4X</a></li>
+						<li><a href="">WML Script</a></li>
+					</ul>
+					<h2>服务器脚本</h2>
+					<ul>
+						<li><a href="">PHP</a></li>
+						<li><a href="">AQL</a></li>
+						<li><a href="">ASP</a></li>
+						<li><a href="">ADO</a></li>
+						<li><a href="">VBSript</a></li>
+					</ul>
+					<h2>XML教程</h2>
+					<ul>
+						<li><a href="">XML</a></li>
+						<li><a href="">DTD</a></li>
+						<li><a href="">XML DOM</a></li>
+						<li><a href="">XSL</a></li>
+						<li><a href="">XSLT</a></li>
+						<li><a href="">XSL-FO</a></li>
+						<li><a href="">XPath</a></li>
+						<li><a href="">XQuery</a></li>
+						<li><a href="">XLink</a></li>
+						<li><a href="">XPoint</a></li>
+						<li><a href="">Schema</a></li>
+						<li><a href="">XForms</a></li>
+						<li><a href="">WAP</a></li>
+						<li><a href="">SVG</a></li>
+					</ul>
+					<h2>Web Service</h2>
+					<ul>
+						<li><a href="">Web Service</a></li>
+						<li><a href="">WSDL</a></li>
+						<li><a href="">SOAP</a></li>
+						<li><a href="">RSS</a></li>
+						<li><a href="">RDF</a></li>
+					</ul>
+					<h2>.NET</h2>
+					<ul>
+						<li><a href="">ASP.NET</a></li>
+						<li><a href="">Web Pages</a></li>
+						<li><a href="">Razor</a></li>
+						<li><a href="">MVC</a></li>
+						<li><a href="">Web Forms</a></li>
+					</ul>
+					<h2>建站手册</h2>
+					<ul>
+						<li><a href="">网站构建</a></li>
+						<li><a href="">万维网联盟</a></li>
+						<li><a href="">浏览器信息</a></li>
+						<li><a href="">网站品质</a></li>
+						<li><a href="">语义网</a></li>
+						<li><a href="">职业规划</a></li>
+						<li><a href="">网站主机</a></li>
+						<li><a href="">网络媒体</a></li>
+					</ul>
+					<h2 id="link_about"><a href="">关于 W3School</a></h2>
+					<h2 id="link_help"><a href="">帮助 W3School</a></h2>
+				</div>
+				<div class="middle left">
+					<div class="middle-top">
+						<div class="middle1">
+							<h2>领先的 Web 技术教程 - 全部免费</h2>
+							<p>在 w3school，你可以找到你所需要的所有的网站建设教程。</p>
+							<p>从基础的 HTML 到 CSS，乃至进阶的 XML、SQL、JS、PHP 和 ASP.NET。</p>
+							<p><strong>从左侧的菜单选择你需要的教程！</strong></p>
+						</div>
+						<div class="middle2">
+							<h3>完整的网站技术参考手册</h3>
+							<p>我们的参考手册涵盖了网站技术的方方面面。</p>
+							<p>其中包括W3C标准技术：HTML、CSS、XML 。以及其他技术，诸如 JavaScript、PHP、SQL 等。</p>
+						</div>
+						<div class="middle3">
+							<h3>在线实例测试工具</h3>
+							<p>在 w3school，我们提供上千个实例。</p>
+							<p>通过使用我们的在线编辑器，你可以编辑这些例子，并对代码进行实验。</p>
+						</div>
+						<div class="middle4">
+							<h3>快捷易懂的学习方式</h3>
+							<p>一寸光阴一寸金，因此，我们为您提供快捷易懂的学习内容。</p>
+							<p>在这里，您可以通过一种易懂的便利的模式获得您需要的任何知识。</p>
+						</div>
+						<div class="middle5">
+							<h3>从何入手？</h3>
+							<p>什么是一个Web建设者需要学习的知识呢？</p>
+							<p>W3School将为您回答这个问题，在您成为专业 Web 开发者的路上助一臂之力。</p>
+							<p>如果您是初学者，请您阅读《<a href="">网站构建初级教程</a>》。</p>
+							<p>如果您是开发者，请您阅读《<a href="">网站构建高级教程</a>》。</p>
+						</div>
+						<div class="middle6">
+							<h3>W3School 新闻</h3>
+							<p><a href="">CSS3 参考手册</a> 已上线，敬请批评指正。</p>
+						</div>
+						<div class="middle7">
+							<h3>W3School 更新信息</h3>
+							<p><a href="">参考手册：PHP Calendar 函数 </a>    
+								<a href="">参考手册：PHP Date / Time 函数</a>     
+								<a href="">教程：HTML 教程</a></p>
+						</div>
+						<div class="middle8">
+							<h3>W3School 友情链接</h3>
+							<p><a href="">Firefox 中文社区</a>
+								<a href="">w3ctech</a>
+								<a href="">WeTest腾讯质量开放平台</a>
+							</p>
+						</div>
+						<div class="middle9">
+							<h3>新浪微博</h3>
+							<p><a href="">W3School官方微博</a></p>
+						</div>
+						<div class="middle10">
+							<h3>微信公众号</h3>
+							<p>W3School 官方服务号</p>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<h2>参考手册</h2>
+					<ul>
+						<li><a href="">HTML/HTML5标签</a></li>
+						<li><a href="">HTML颜色</a></li>
+						<li><a href="">CSS 1,2,3</a></li>
+						<li><a href="">JavaScript</a></li>
+						<li><a href="">HTML DOM</a></li>
+						<li><a href="">jQuery</a></li>
+						<li><a href="">jQuery Mobile</a></li>
+						<li><a href="">VBSript</a></li>
+						<li><a href="">ASP</a></li>
+						<li><a href="">ADO</a></li>
+						<li><a href="">ASP.NET</a></li>
+						<li><a href="">PHP 5.1</a></li>
+						<li><a href="">XML DOM</a></li>
+						<li><a href="">XSLT 1.0</a></li>
+						<li><a href="">XPath 2.0</a></li>
+						<li><a href="">XSL-FO</a></li>
+						<li><a href="">WML 1.1</a></li>
+						<li><a href="">W3C 术语表</a></li>
+					</ul>
+					<h2>字符集</h2>
+					<ul>
+						<li><a href="">HTML字符集</a></li>
+						<li><a href="">HTML ASCII</a></li>
+						<li><a href="">HTML ISO-8859-1</a></li>
+						<li><a href="">HTML 符号</a></li>
+					</ul>
+					<h2>实例/案例</h2>
+					<ul>
+						<li><a href="">HTML实例</a></li>
+						<li><a href="">CSS实例</a></li>
+						<li><a href="">XML实例</a></li>
+						<li><a href="">JavaScript实例</a></li>
+						<li><a href="">HTML DOM实例</a></li>
+						<li><a href="">jQuery实例</a></li>
+						<li><a href="">jQuery Mobile实例</a></li>
+						<li><a href="">VBSript实例</a></li>
+						<li><a href="">ASP实例</a></li>
+						<li><a href="">ADO实例</a></li>
+						<li><a href="">AJAX实例</a></li>
+						<li><a href="">SVG实例</a></li>
+						<li><a href="">XML DOM实例</a></li>
+						<li><a href="">WAP实例</a></li>
+					</ul>
+					<h2>测验/考试</h2>
+					<ul>
+						<li><a href="">HTML测验</a></li>
+						<li><a href="">CSS 测验</a></li>
+						<li><a href="">JavaScript测验</a></li>
+						<li><a href="">HTML5 测验</a></li>
+						<li><a href="">jQuery测验</a></li>
+						<li><a href="">XHTML测验</a></li>
+						<li><a href="">SQL测验</a></li>
+						<li><a href="">ASP测验</a></li>
+						<li><a href="">PHP测验</a></li>
+					</ul>
+					<h2>代码验证</h2>
+					<ul>
+						<li><a href="">验证HTML</a></li>
+						<li><a href="">验证CSS</a></li>
+						<li><a href="">验证XHTML</a></li>
+						<li><a href="">验证XML</a></li>
+						<li><a href="">验证WML</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- footer -->
+			<div class="footer">
+				<p id="p1">W3School 简体中文版提供的内容仅用于培训和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。</p>
+				<p id="p2"><a href="">使用条款</a>和<a href="">隐私条款</a>。版权所有，保留一切权利。 赞助商：<a href="">海赢科投资有限公司</a>。 蒙ICP备06004630号 &nbsp;&nbsp;&nbsp;<a href="" id="a1">广告刊例</a></p>
+			</div>
+		</div>
+		
+	</body>
+</html>
